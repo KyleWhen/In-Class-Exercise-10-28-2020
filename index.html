@@ -585,6 +585,19 @@
 
 							</div>
 
+<script>
+              var imglist = document.querySelectorAll(".img-container-hide");
+              taglist[0].setAttribute('class', 'img-container');
+              var index = 0;
+              setInterval(runnow, 5000);
+
+              function runnow(){
+              imglist[index].setAttribute('class', 'img-container-hide');
+              index++;
+              index = index%imglist.length;
+              imglist[index].setAtribute('class', 'tag-container');
+              }
+              </script>
 
 							<div class="practice">
 								<h1>JavaScript Object </h1>
